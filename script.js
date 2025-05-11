@@ -85,3 +85,9 @@ getProducts();
 </div>
 </div> */
 }
+
+function logout(){
+    localStorage.removeItem("user-name")
+    localStorage.removeItem("password")
+    localStorage.removeItem("email")
+}
