@@ -1,0 +1,31 @@
+.text-orange {
+  color: #f28c38;
+}
+.bg-peach {
+  background-color: #fff5f0;
+}
+.text-gray {
+  color: #8a8a8a;
+}
+.text-black {
+  color: #000000;
+}
+.btn-orange {
+  background-color: #f28c38;
+  color: #ffffff;
+  border: none;
+}
+.btn-orange:hover {
+  background-color: #d97a2c;
+  color: #ffffff;
+}
+.input-peach {
+  background-color: #ffeded;
+  border: 1px solid #e0e0e0;
+}
+.login-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+}
