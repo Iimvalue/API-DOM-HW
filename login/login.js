@@ -1,10 +1,10 @@
-localStorage.getItem("user-name") != null
-  ? (window.location.href = "../index.html")
-  : "";
+localStorage.getItem("sign-up") == "from-sign-up"
+  ? ""
+  : (window.location.href = "../index.html");
 document
   .getElementById("loginForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+  .addEventListener("submit", function (e) {
+    e.preventDefault()
     var userName = document.getElementById("userName").value.trim();
     var password = document.getElementById("password").value;
     var storedUserName = localStorage.getItem("user-name");
@@ -14,4 +14,5 @@ document
     } else {
       alert("Invalid full name or password");
     }
+    localStorage.setItem("sign-up", "from-sign-in")
   });

@@ -1,5 +1,5 @@
-document.getElementById('registerForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+    e.preventDefault()
     let fullName = document.getElementById('full_name').value.trim();
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirm_password').value;
@@ -20,6 +20,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     localStorage.setItem("user-name", fullName)
     localStorage.setItem("email", email)
     localStorage.setItem("password", password)
+    localStorage.setItem("sign-up", "from-sign-up")
     window.location.href = '../login/';
 
 });
