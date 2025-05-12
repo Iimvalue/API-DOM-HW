@@ -1,8 +1,6 @@
-// localStorage.getItem("user-name") == null
-//   ? localStorage.getItem("user-name") != null
-//     ? localStorage.getItem("user-name")
-//     : ""
-//   : "";
+localStorage.getItem("user-name") == null
+? window.location.href = './login' : "";
+
 
 let userName =
   localStorage.getItem("user-name") != null
@@ -11,12 +9,7 @@ let userName =
 
 let userNameNavBar = document.getElementById("user-name");
 
-// userNameNavBar.textContent =
-//   localStorage.getItem("user-name") != null
-//     ? `Welcome ${userName}`
-//     : userNameNavBar.innerHTML(
-//         "<a href='./login' style={text-decoration:none; color:white}>Not Loged In</a>"
-//       );
+userNameNavBar.textContent = userName
 
 let cardContainer = document.getElementById("card-container");
 
@@ -43,8 +36,7 @@ async function getProducts() {
     imgContainer.appendChild(img);
 
     let cardBody = document.createElement("div");
-    cardBody.className =
-      "card-body d-flex flex-column justify-content-center align-items-center gap-4";
+    cardBody.className = "card-body d-flex flex-column justify-content-center align-items-center gap-4";
 
     let cardText = document.createElement("div");
     cardText.className = "card-text text-center";
@@ -52,7 +44,7 @@ async function getProducts() {
 
     let price = document.createElement("div");
     price.className = "fw-bold fs-5 text-dark";
-    price.textContent = "$ " + product.price;
+    price.textContent = "$ " + product.price; 
 
     let buyButton = document.createElement("a");
     buyButton.className = "btn btn-orange text-white";
@@ -67,7 +59,7 @@ async function getProducts() {
     card.appendChild(cardBody);
     colDiv.appendChild(card);
     cardContainer.appendChild(colDiv);
-  });
+});
 }
 
 getProducts();
@@ -91,8 +83,8 @@ getProducts();
 </div> */
 }
 
-function logout() {
-  localStorage.removeItem("user-name");
-  localStorage.removeItem("password");
-  localStorage.removeItem("email");
+function logout(){
+    localStorage.removeItem("user-name")
+    localStorage.removeItem("password")
+    localStorage.removeItem("email")
 }
