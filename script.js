@@ -11,12 +11,12 @@ let userName =
 
 let userNameNavBar = document.getElementById("user-name");
 
-userNameNavBar.textContent =
-  localStorage.getItem("user-name") != null
-    ? `Welcome ${userName}`
-    : userNameNavBar.innerHTML(
-        "<a href='./login' style={text-decoration:none; color:white}>Not Loged In</a>"
-      );
+// userNameNavBar.textContent =
+//   localStorage.getItem("user-name") != null
+//     ? `Welcome ${userName}`
+//     : userNameNavBar.innerHTML(
+//         "<a href='./login' style={text-decoration:none; color:white}>Not Loged In</a>"
+//       );
 
 let cardContainer = document.getElementById("card-container");
 
