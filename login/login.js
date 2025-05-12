@@ -1,8 +1,9 @@
-localStorage.getItem("sign-up") == null
-  ? localStorage.getItem("sign-up") != "from-sign-up"
-    ? (window.location.href = "../index.html")
-    : ""
-  : "";
+// localStorage.getItem("sign-up") == null
+//   ? localStorage.getItem("sign-up") != "from-sign-up"
+//     ? (window.location.href = "../index.html")
+//     : ""
+//   : "";
+
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
   var userName = document.getElementById("userName").value.trim();
